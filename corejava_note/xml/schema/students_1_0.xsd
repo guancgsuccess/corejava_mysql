@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/student_1_0"
+	xmlns:tns="http://www.example.org/student_1_0"
+	elementFormDefault="qualified">
+	
+	<element name="students">
+		<complexType>
+			<sequence minOccurs="1" maxOccurs="unbounded">
+				<element name="student" type="tns:StuType"/>
+			</sequence>
+		</complexType>
+	</element>
+	<complexType name="StuType">
+		<sequence>
+			<element name="name" type="string"/>
+			<element name="no" type="string"/>
+			<element name="birthday" type="date"/>
+			<element name="address" type="tns:AddrType"/>
+		</sequence>
+		<attribute name="id" type="int" use="required"></attribute>
+	</complexType>
+	<complexType name="AddrType">
+		<sequence>
+			<element name="province" type="string"/>
+			<element name="city" type="string"/>
+		</sequence>
+	</complexType>
+	
+</schema>

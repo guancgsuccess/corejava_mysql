@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE books SYSTEM "books_0_1.dtd" > -->
+<books>
+  <book id="001">
+    <name>西游记</name>
+    <author>吴承恩</author>
+    <price>100.0</price>
+    <bookinfo>
+    	<publish_house>人民出版社</publish_house>
+    	<publish_date>2001-01-01</publish_date>
+    	<pages>100</pages>
+    	<description>这是一本关于讽刺明朝社会的神话小说</description>
+    </bookinfo>
+  </book>
+  <book id="002">
+    <name>红楼梦</name>
+    <author>曹雪芹</author>
+    <price>80.0</price>
+    <bookinfo>
+    	<publish_house>人民出版社</publish_house>
+    	<publish_date>2011-01-01</publish_date>
+    	<pages>100</pages>
+    	<description>这是一本关于一个男人和多个女人的故事</description>
+    </bookinfo>
+  </book>
+  <book id="003">
+    <name>三国演义</name>
+    <author>罗贯中</author>
+    <price>100.0</price>
+    <bookinfo>
+    	<publish_house>人民出版社</publish_house>
+    	<publish_date>2001-01-01</publish_date>
+    	<pages>100</pages>
+    	<description>这是一本关于进国企还是进私企的故事</description>
+    </bookinfo>
+  </book>
+</books>

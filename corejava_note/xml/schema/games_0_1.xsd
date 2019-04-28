@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/games_0_1"
+	xmlns:tns="http://www.example.org/games_0_1"
+	elementFormDefault="qualified">
+	<element name="games">
+		<complexType>
+			<sequence minOccurs="1" maxOccurs="unbounded">
+				<element name="game" type="tns:GameType"/>
+			</sequence>
+		</complexType>	
+	</element>
+	<complexType name="GameType">
+		<sequence>
+			<element name="name" type="string"/>
+			<element name="company" type="string"/>
+			<element name="year" type="int"/>
+			<element name="type" type="string"/>
+		</sequence>
+		<attribute name="id" type="int" use="required"></attribute>
+	</complexType>
+</schema>
